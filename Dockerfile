@@ -19,4 +19,4 @@ EXPOSE 8080
 
 COPY --from=build /build/target/product.jar product.jar
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "product.jar"]
